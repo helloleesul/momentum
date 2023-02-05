@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Momentum</title>
+    <!-- css -->
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <div id="logout-box">
+      <form id="login-form">
+        <div class="profile"></div>
+        <label for="name">What is your name?</label>
+        <input
+          id="name"
+          type="text"
+          required
+          maxlength="15"
+          placeholder="이름 입력"
+        />
+        <!-- <button type="submit">Log in</button> -->
+      </form>
+    </div>
+
+    <div id="greeting-box" class="hidden">
+      <header>
+        <ul>
+          <li>애플</li>
+          <li class="bold"><span class="user-name"></span>'s todo-list</li>
+          <li>파일</li>
+          <li>편집</li>
+          <li>보기</li>
+          <li>이동</li>
+          <li>윈도우</li>
+          <li>도움말</li>
+        </ul>
+        <ul>
+          <li>배터리</li>
+          <li>한영</li>
+          <li>와이파이</li>
+          <li>검색</li>
+          <li>제어센터</li>
+          <li>날짜</li>
+          <li>시간</li>
+        </ul>
+      </header>
+      <div id="todo-box">
+        <div class="todo-header">
+          <div>
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+          <div id="total-todo"></div>
+        </div>
+        <div class="todo-info">
+          <h1>👩‍💻 <span class="user-name"></span></h1>
+          <h2>🕙 <span id="clock"></span></h2>
+        </div>
+        <div class="todo-list">
+          <form id="todo-form">
+            <input type="text" placeholder="write a to do and press enter." />
+          </form>
+          <ul id="todo-list"></ul>
+        </div>
+      </div>
+
+      <div id="weather-box">
+        <h1>☀️ Today's weather</h1>
+        <ul>
+          <li><span>- City</span> <span id="city"></span></li>
+          <li><span>- Weather</span> <span id="weather"></span></li>
+          <li>
+            <span>- Temperature</span> <span><span id="temp"></span> °C</span>
+          </li>
+          <li>
+            <span>- Minimum</span> <span><span id="tempMin"></span> °C</span>
+          </li>
+          <li>
+            <span>- Maximum</span> <span><span id="tempMax"></span> °C</span>
+          </li>
+          <li>
+            <span>- Sensory</span> <span><span id="tempFeel"></span> °C</span>
+          </li>
+        </ul>
+      </div>
+
+      <footer>
+        <div id="quotes">
+          <span class="quote"></span>
+          <span class="author"></span>
+        </div>
+        <button id="reset"></button>
+      </footer>
+    </div>
+    <!-- js -->
+    <script src="js/greeting.js"></script>
+    <script src="js/clock.js"></script>
+    <script src="js/quotes.js"></script>
+    <script src="js/background.js"></script>
+    <script src="js/todo.js"></script>
+    <script src="js/weather.js"></script>
+  </body>
+</html>
